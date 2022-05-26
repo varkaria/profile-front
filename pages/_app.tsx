@@ -56,15 +56,29 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
       <nav className="fixed w-full px-4 py-6 bg-[#202020] sm:bg-transparent text-white lg:py-10 lg:px-12 z-20">
         <div className="flex items-center">
-          <Link href="/">
-            <Image
-              className="transition-all transform cursor-pointer hover:scale-95"
-              src="/logo.svg"
-              alt="Varkaria"
-              width={48}
-              height={48}
-            ></Image>
-          </Link>
+          <div className="flex items-center space-x-4">
+            <Link href="/">
+              <Image
+                className="transition-all transform cursor-pointer hover:scale-95"
+                src="/logo.svg"
+                alt="Varkaria"
+                width={48}
+                height={48}
+              ></Image>
+            </Link>
+            <a
+              href="https://webring.wonderful.software#varkaria.tech"
+              title="วงแหวนเว็บ"
+              className="block w-[32px] h-[32px]"
+            >
+              <Image
+                src="https://webring.wonderful.software/webring.white.svg"
+                alt="วงแหวนเว็บ"
+                width={32}
+                height={32}
+              ></Image>
+            </a>
+          </div>
 
           <div className="hidden my-auto ml-auto space-x-8 font-light sm:block">
             <Link href="/">HOME</Link>
