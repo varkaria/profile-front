@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import anime from "animejs";
 import Head from "next/head";
 import Image from "next/image";
+import { rgbDataURL } from "../globals";
 
 type Work = {
   title: string;
@@ -92,6 +93,7 @@ const Works: NextPage = () => {
                 height={338}
                 alt={work.title}
                 className="rounded-lg"
+                blurDataURL={rgbDataURL(33, 33, 33)}
                 placeholder="blur"
               ></Image>
               <div>
