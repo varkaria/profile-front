@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Inter, sans-serif;
+  background: #181818;
 }
 
 a {
@@ -13,4 +19,37 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.titleSlide {
+  @apply w-[250rem] text-center
+}
+
+.unfocus {
+  animation: unFocus 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes unFocus {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+    font-weight: 500;
+  }
+  100% {
+    opacity: 0.3;
+    font-weight: 200;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 1px;
+  background-color: #18181877;
+  border-bottom-right-radius: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ffffff17;
 }
