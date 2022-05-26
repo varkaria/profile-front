@@ -94,7 +94,7 @@ const Projects: NextPage = () => {
 
       <div className="box">
         <h1 className="text-xl font-light opacity-90">Projects</h1>
-        <div className="text-[3rem] leading-tight text-wrapper font-light mt-4 grid grid-cols-2 gap-6">
+        <div className="text-[3rem] leading-tight text-wrapper font-light mt-4 grid md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <a
               className="leading-12 box hover:text-blue-200"
