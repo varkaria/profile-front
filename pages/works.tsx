@@ -92,6 +92,7 @@ const Works: NextPage = () => {
                 height={338}
                 alt={work.title}
                 className="rounded-lg"
+                placeholder="blur"
               ></Image>
               <div>
                 <h1 className="text-xl">{work.title}</h1>
