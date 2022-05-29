@@ -85,6 +85,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
             <Link href="/about">ABOUT ME</Link>
             <Link href="/projects">PROJECTS</Link>
             <Link href="/works">WORKS</Link>
+            <a href="https://blog.varkaria.tech">BLOGS</a>
           </div>
 
           <div
