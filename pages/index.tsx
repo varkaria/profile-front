@@ -113,14 +113,6 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
-
-      <Image
-        src="/bg.jpg"
-        layout="fill"
-        objectFit="cover"
-        className="opacity-0 pointer-events-none showme"
-        alt="Varkaria"
-      ></Image>
     </div>
   );
 };
