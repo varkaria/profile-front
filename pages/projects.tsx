@@ -18,7 +18,7 @@ const Projects: NextPage = () => {
       translateY: [20, 0],
       easing: "easeOutExpo",
       duration: 1000,
-      delay: (el: any, i: number) => 100 * i,
+      delay: (el: any, i: number) => 50 * i,
     });
 
     anime({
@@ -31,10 +31,20 @@ const Projects: NextPage = () => {
 
   const projects: Project[] = [
     {
+      title: "svg-path-color-changer",
+      description: "a simple website for changing path color from my logo 👾",
+      href: "https://github.com/Varkaria/svg-path-color-changer",
+    },
+    {
+      title: "color-swatches-generator ",
+      description: "a little website for generate color swatches ✒️",
+      href: "https://github.com/Varkaria/color-swatches-generator",
+    },
+    {
       title: "oturne",
       description:
         "A next generation of oturna written with Nuxt 3, Typescript, Express, TailwindCSS",
-      href: "https://github.com/gusb3ll/kemona",
+      href: "https://github.com/gusb3ll/oturne",
     },
     {
       title: "oturna",
@@ -102,7 +112,9 @@ const Projects: NextPage = () => {
               href={project.href}
             >
               {project.title}
-              <span className="block text-xl">{project.description}</span>
+              <span className="block text-xl opacity-70">
+                {project.description}
+              </span>
             </a>
           ))}
         </div>

@@ -5,8 +5,6 @@ import anime from "animejs";
 import Head from "next/head";
 
 const About: NextPage = () => {
-
-
   useEffect(() => {
     anime({
       targets: ".letter",
@@ -15,7 +13,6 @@ const About: NextPage = () => {
       duration: 1000,
       delay: (el: any, i: number) => 1 * i,
     });
-
     anime({
       targets: ".box",
       opacity: [0, 1],
@@ -120,9 +117,24 @@ const About: NextPage = () => {
       <div className="box">
         <h1 className="text-xl font-light opacity-90">Socials</h1>
         <div className="text-3xl lg:text-[3rem] leading-tight text-wrapper font-light mt-4 grid">
-          <a className="transition-all hover:opacity-50" href="https://facebook.com/varkaria">Facebook</a>
-          <a className="transition-all hover:opacity-50" href="https://github.com/varkaria">Github</a>
-          <a className="transition-all hover:opacity-50" href="https://www.linkedin.com/in/pavaresorn-malai">LinkedIn</a>
+          <a
+            className="transition-all hover:opacity-50"
+            href="https://facebook.com/varkaria"
+          >
+            Facebook
+          </a>
+          <a
+            className="transition-all hover:opacity-50"
+            href="https://github.com/varkaria"
+          >
+            Github
+          </a>
+          <a
+            className="transition-all hover:opacity-50"
+            href="https://www.linkedin.com/in/pavaresorn-malai"
+          >
+            LinkedIn
+          </a>
         </div>
       </div>
     </div>
